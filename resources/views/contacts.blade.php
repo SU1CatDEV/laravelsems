@@ -1,3 +1,5 @@
+@extends('layouts.default')
+
 @section('content')
     <h1>Страница контактов</h1>
     @foreach($contacts as $contact)

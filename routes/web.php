@@ -47,7 +47,7 @@ Route::get(
 Route::get(
     '/contacts', 
     function () {
-        view(
+        return view(
             'contacts',
             ['contacts' => [
                 [
