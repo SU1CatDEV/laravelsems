@@ -1,4 +1,5 @@
-<form name="employee-form" id="employee-form" method="post" action="{{ url('store-form') }}">
+{{-- я не знаю конкретно ли это хотели, но меня не учили создавать АПИ с цсрф, а в формах передовать put нельзя. --}}
+<form name="employee-form" id="employee-form" method="post" action="{{ url('/employee/'.$id) }}">
     @csrf
     <div class="form-group">
         <label for="name">Имя</label>
